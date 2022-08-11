@@ -10,14 +10,14 @@ window.addEventListener("load", () => {
     }
 })
 
-function showDate() {
+function showD2ate() {
     const date = document.querySelector(".date")
     const options = {weekday: 'long', month: 'long', day: 'numeric'};
     const currentDate = (new Date()).toLocaleDateString('en-US', options);
     date.textContent = currentDate;
 }
 
-function showTime() {
+function show2Time() {
     const time = document.querySelector(".time")
     const currentTime = (new Date()).toLocaleTimeString();
     time.textContent = currentTime;
@@ -26,7 +26,7 @@ function showTime() {
     setTimeout(showTime, 1000);
 }
 
-function setTimeOfDay() {
+function set2TimeOfDay() {
     const greeting = document.querySelector(".greeting");
     let timeOfDay = null;
     let date = new Date();
