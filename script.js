@@ -41,7 +41,7 @@ function setTimeOfDay() {
         timeOfDay = "night"
     }
 
-    greeting.textContent = `Good ${timeOfDay}`
+    greeting.textContent = `Good ${timeOfDay},`
 }
 
 showTime();
