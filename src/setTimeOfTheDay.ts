@@ -1,4 +1,4 @@
-const setTimeOfTheDay = (): void => {
+const setTimeOfTheDay = (): string => {
   const greeting: Element | null = document.querySelector('.greeting');
   let timeOfDay: string | null = null;
   const date: Date = new Date();
@@ -14,6 +14,8 @@ const setTimeOfTheDay = (): void => {
   }
 
   if (greeting) greeting.textContent = `Good ${timeOfDay},`;
+
+  return timeOfDay;
 };
 
 export default setTimeOfTheDay;
