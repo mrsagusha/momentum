@@ -91,6 +91,10 @@ body {
   opacity: 1;
 }
 
+.change-quote:hover {
+  transform: rotate(45deg);
+}
+
 .player-icon:active,
 .slider-icon:active,
 .change-quote:active {
@@ -262,6 +266,7 @@ body {
 
 .author {
   min-height: 20px;
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
