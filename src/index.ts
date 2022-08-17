@@ -2,6 +2,7 @@ import showTime from './showTime';
 import setBackground from './setBackground';
 import getWeather from './getWeather';
 import setQuote from './setQuote';
+import setAudioPlayer from './scripts/audioPlayer/setAudioPlayer';
 import './css/owfont-regular.css';
 import './css/style.css';
 
@@ -57,3 +58,4 @@ if (cityInput.value.length === 0) {
 showTime();
 setBackground(numberOfImage);
 setQuote();
+setAudioPlayer();

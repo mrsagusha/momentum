@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Imminence",
+        "src": "./assets/sounds/Imminence.mp3",
+        "duration": "04:31"
+    },
+    {
+        "title": "A Storm Was Gathering",
+        "src": "./assets/sounds/A_Storm_Was_Gathering.mp3",
+        "duration": "04:58"
+    },
+    {
+        "title": "Last Mile",
+        "src": "./assets/sounds/Last_Mile.mp3",
+        "duration": "04:54"
+    },
+    {
+        "title": "Away",
+        "src": "./assets/sounds/Away.mp3",
+        "duration": "05:07"
+    },
+    {
+        "title": "Shadows of the Past",
+        "src": "./assets/sounds/Shadows_Of_The_Past.mp3",
+        "duration": "03:50"
+    }
+]

@@ -1,4 +1,4 @@
-import quotes from './quotes.json';
+import quotes from './data/quotes.json';
 
 const setQuote = (): void => {
   const quote: Element = document.querySelector('.quote');
