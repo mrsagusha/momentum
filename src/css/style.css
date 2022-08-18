@@ -40,8 +40,17 @@ body {
   margin-bottom: 28px;
 }
 
+.song {
+  display: flex;
+  align-items: center;
+}
+
 .play-list {
   text-align: left;
+}
+
+.fa-play:hover {
+  cursor: pointer;
 }
 
 .play-item {
@@ -56,14 +65,6 @@ body {
 
 .play-item:hover {
   opacity: 1;
-}
-
-.play-item::before {
-  content: "\2713";  
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-weight: 900;
 }
 
 .item-active::before {

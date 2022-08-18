@@ -1,7 +1,7 @@
-import showTime from './showTime';
-import setBackground from './setBackground';
-import getWeather from './getWeather';
-import setQuote from './setQuote';
+import showTime from './scripts/timeAndDate/showTime';
+import setBackground from './scripts/setBackground';
+import getWeather from './scripts/getWeather';
+import setQuote from './scripts/setQuote';
 import setAudioPlayer from './scripts/audioPlayer/setAudioPlayer';
 import './css/owfont-regular.css';
 import './css/style.css';

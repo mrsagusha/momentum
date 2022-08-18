@@ -1,5 +1,5 @@
 /* eslint-disable prefer-template */
-import setTimeOfTheDay from './setTimeOfTheDay';
+import setTimeOfTheDay from './timeAndDate/setTimeOfTheDay';
 
 const setBackground = (numberOfImage: string): void => {
   const timeOfDay: string = setTimeOfTheDay();

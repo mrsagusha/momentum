@@ -1,9 +1,9 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-mixed-operators */
+/* eslint-disable radix */
 
 import getTimeCodeFromNum from './getTimeCodeFromNum';
 
-/* eslint-disable radix */
 const timeline: Element | null = document.querySelector('.timeline');
 const progressBar: HTMLElement | null = document.querySelector('.progress');
 

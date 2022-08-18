@@ -6,7 +6,7 @@ const humidity: Element = document.querySelector('.humidity');
 
 async function getWeather(input: HTMLInputElement): Promise<void> {
   try {
-    const url: string = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&lang=ru&appid=b6d2dfe6b6514321dc225617256b0b17&units=metric`;
+    const url: string = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&lang=en&appid=b6d2dfe6b6514321dc225617256b0b17&units=metric`;
     const res: Response = await fetch(url);
     const data = await res.json();
 
