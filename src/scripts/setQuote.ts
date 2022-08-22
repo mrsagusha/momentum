@@ -18,7 +18,20 @@ const setQuote = (): void => {
     author.textContent = `© ${quotes[randomNum].author}`;
   };
 
-  changeQuoteButton.addEventListener('click', changeQuote);
+  changeQuoteButton.addEventListener('click', (): void => {
+    [quote, author].forEach((el) => {
+      el.classList.remove('visible');
+      el.classList.add('hidden');
+      setTimeout((): void => {
+        el.classList.remove('hidden');
+        el.classList.add('visible');
+      }, 200);
+      setTimeout(() => {
+        el.classList.remove('visible');
+      }, 300);
+    });
+    setTimeout(changeQuote, 200);
+  });
 };
 
 export default setQuote;

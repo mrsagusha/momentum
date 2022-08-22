@@ -43,10 +43,26 @@ body {
 .song {
   display: flex;
   align-items: center;
+  font-size: 12px;
 }
 
 .play-list {
   text-align: left;
+  height: 80px;
+  width: 40%;
+  overflow-y: scroll;
+}
+
+.play-list::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.play-list::-webkit-scrollbar-thumb {
+  background-color: rgba(129, 65, 42, 0.877);
+  border-radius: 5px
 }
 
 .fa-play:hover {
@@ -362,6 +378,17 @@ body {
   min-height: 20px;
   font-size: 12px;
 }
+
+.hidden {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.visible {
+  opacity: 1;
+  transition: 0.2s
+}
+
 
 @media (max-width: 768px) {
   .time {
