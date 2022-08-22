@@ -3,6 +3,9 @@ import setBackground from './scripts/setBackground';
 import getWeather from './scripts/getWeather';
 import setQuote from './scripts/setQuote';
 import setAudioPlayer from './scripts/audioPlayer/setAudioPlayer';
+import showTodo from './scripts/toDo/showTodo';
+import { addTask } from './scripts/toDo/addTask';
+import deleteTask from './scripts/toDo/deleteTask';
 import './css/owfont-regular.css';
 import './css/style.css';
 
@@ -59,3 +62,6 @@ showTime();
 setBackground(numberOfImage);
 setQuote();
 setAudioPlayer();
+showTodo();
+addTask();
+deleteTask();

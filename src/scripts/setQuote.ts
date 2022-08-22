@@ -25,12 +25,12 @@ const setQuote = (): void => {
       setTimeout((): void => {
         el.classList.remove('hidden');
         el.classList.add('visible');
-      }, 200);
+      }, 300);
       setTimeout(() => {
         el.classList.remove('visible');
-      }, 300);
+      }, 400);
     });
-    setTimeout(changeQuote, 200);
+    setTimeout(changeQuote, 300);
   });
 };
 

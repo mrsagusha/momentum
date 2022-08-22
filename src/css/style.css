@@ -100,7 +100,7 @@ body {
   outline: 0;
   opacity: .8;
   cursor: pointer;
-  transition: .3s;  
+  transition: .5s;  
 }
 
 .player-icon:hover,
@@ -114,8 +114,7 @@ body {
 }
 
 .player-icon:active,
-.slider-icon:active,
-.change-quote:active {
+.slider-icon:active {
   border: 0;
   outline: 0;  
   transform: scale(1.1);
@@ -364,6 +363,136 @@ body {
   padding: 20px;
 }
 
+.todo-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 30px;
+}
+
+.todo-wrapper {
+  position: absolute;
+  bottom: 80px;
+  left: -400px;
+  width: 400px;
+  min-height: 250px;
+  max-height: 380px;
+  background-color: rgba(122, 122, 122, 0.5);
+}
+
+.fa-clipboard-list:hover {
+  cursor: pointer;
+}
+
+.todo-tabs {
+  display: flex;
+}
+
+.tasks-tab, 
+.done-tab {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.done-tab {
+  background-color: rgba(37, 37, 37, 0.5);
+}
+
+.tasks-tab__text,
+.done-tab__text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  opacity: .6;
+}
+
+.todo-tasks {
+  min-height: 190px;
+}
+
+.task {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.fa-circle-check {
+  margin-left: 10px;
+  margin-right: 20px;
+  color: #fff;
+  opacity: .6;
+  transition: 0.2s;
+}
+
+.fa-circle-check:hover {
+  opacity: 1;
+}
+
+.fa-trash-can {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  opacity: 0;
+  transition: 0.2s;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.task:hover {
+  cursor: pointer;
+  background-color: rgba(122, 122, 122, 0.6);
+}
+
+.task:hover .fa-trash-can{
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.fa-trash-can:hover {
+  transform: rotate(-20deg);
+}
+
+.task-text {
+  color: #fff;
+  opacity: .6;
+  max-width: 320px;
+  word-break: break-word;
+}
+
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.todo-input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.todo-input::placeholder {
+  color: #fff;
+  opacity: .6;
+}
+
+.fa-arrow-up {
+  font-size: 20px;
+  transition: 0.2s;
+  padding-right: 10px;
+}
+
+.fa-arrow-up:hover {
+  cursor: pointer;
+}
+
+.fa-arrow-up:active {
+  bottom: 15px
+}
+
 .change-quote {
   margin-bottom: 30px;
   background-image: url("../assets/svg/reload.svg");  
@@ -381,12 +510,22 @@ body {
 
 .hidden {
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .visible {
   opacity: 1;
-  transition: 0.2s
+  transition: 0.3s
+}
+
+.opened {
+  left: 20px;
+  transition: 0.3s;
+}
+
+.closed {
+  left: -400px;
+  transition: 0.3s;
 }
 
 
