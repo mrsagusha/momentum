@@ -1,7 +1,12 @@
+/* eslint-disable max-len */
+import deleteTask from './deleteTask';
+import { isSwitched, tasksDone } from './switchTab';
+
 const addButton: HTMLElement | null = document.querySelector('.fa-arrow-up');
 const taskInput: HTMLInputElement | null = document.querySelector('.todo-input');
 const toDoTasks: HTMLElement | null = document.querySelector('.todo-tasks');
 const arrayOfDeleteButtons: HTMLElement[] = [];
+const arrayofCompleteButtons: HTMLElement[] = [];
 
 function createTask() {
   const task = document.createElement('div');
@@ -21,19 +26,56 @@ function createTask() {
   if (taskInput.value) {
     toDoTasks.prepend(task);
     arrayOfDeleteButtons.push(deleteButton);
+    arrayofCompleteButtons.push(completeButton);
     taskInput.value = '';
   }
+  completeButton.addEventListener('click', (): void => {
+    if (!isSwitched) {
+      completeButton.parentElement.classList.add('hidden');
+      setTimeout(() => {
+        completeButton.parentNode?.parentNode?.removeChild(completeButton.parentNode);
+        const currentDate = new Date();
+        const taskDone = document.createElement('div');
+        const taskTextDone = document.createElement('p');
+        const taskDate = document.createElement('div');
+        const calendar = document.createElement('i');
+        const taskDateText = document.createElement('p');
+        taskDone.classList.add('task-done');
+        completeButton.classList.add('fa-regular');
+        completeButton.classList.add('fa-circle-check');
+        taskTextDone.classList.add('task-text-done');
+        taskDate.classList.add('task-date');
+        calendar.classList.add('fa-solid');
+        calendar.classList.add('fa-calendar-check');
+        taskDateText.classList.add('task-date-text');
+        taskDate.append(calendar);
+        taskDate.append(taskDateText);
+        taskDone.append(taskDate);
+        taskDone.append(completeButton);
+        taskDone.append(taskTextDone);
+        tasksDone.prepend(taskDone);
+        taskTextDone.textContent = taskText.textContent;
+        taskDateText.textContent = `${(currentDate.getDay()).toString().padStart(2, '0')}.${(currentDate.getMonth()).toString().padStart(2, '0')}.${currentDate.getFullYear()}`;
+      }, 300);
+    }
+  });
 }
 
 const addTask = (): void => {
   if (addButton) {
     if (taskInput) {
-      addButton.addEventListener('click', createTask);
+      addButton.addEventListener('click', (): void => {
+        createTask();
+        deleteTask();
+      });
       taskInput.addEventListener('keydown', (e): void => {
-        if (e.code === 'Enter') createTask();
+        if (e.code === 'Enter') {
+          createTask();
+          deleteTask();
+        }
       });
     }
   }
 };
 
-export { addTask, arrayOfDeleteButtons };
+export { addTask, arrayOfDeleteButtons, arrayofCompleteButtons };

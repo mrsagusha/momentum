@@ -395,6 +395,11 @@ body {
   width: 50%;
 }
 
+.tasks-tab:hover,
+.done-tab:hover {
+  cursor: pointer;
+}
+
 .done-tab {
   background-color: rgba(37, 37, 37, 0.5);
 }
@@ -409,6 +414,38 @@ body {
 
 .todo-tasks {
   min-height: 190px;
+}
+
+.todo-tasks-done {
+  min-height: 190px;
+  display: none;
+}
+
+.task-done {
+  padding: 10px 0px;
+  width: 100%;
+  display: flex;
+}
+
+.task-text-done {
+  color: #fff;
+  opacity: .6;
+  max-width: 320px;
+  word-break: break-word;
+  text-decoration: line-through;
+}
+
+.task-date {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  display: flex;
+  color: #fff;
+  opacity: .6;
+}
+
+.task-date-text {
+  padding: 0px 10px;
 }
 
 .task {

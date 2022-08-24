@@ -5,7 +5,7 @@ import setQuote from './scripts/setQuote';
 import setAudioPlayer from './scripts/audioPlayer/setAudioPlayer';
 import showTodo from './scripts/toDo/showTodo';
 import { addTask } from './scripts/toDo/addTask';
-import deleteTask from './scripts/toDo/deleteTask';
+import { switchTab } from './scripts/toDo/switchTab';
 import './css/owfont-regular.css';
 import './css/style.css';
 
@@ -64,4 +64,4 @@ setQuote();
 setAudioPlayer();
 showTodo();
 addTask();
-deleteTask();
+switchTab();
