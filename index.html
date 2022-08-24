@@ -10,12 +10,10 @@
   <header class="header">
     <div class="player">
       <div class="general">
-        <div class="player-controls">
-          <button class="play-prev player-icon"></button>
-          <button class="play player-icon"></button>
-          <button class="play-next player-icon"></button>
-      </div>
         <div class="player-body">
+          <div class="song-name">
+            <p class="song-name__title"></p>
+          </div>
           <div class="timeline">
             <div class="progress"></div>
           </div>
@@ -25,9 +23,11 @@
               <div class="divider">/</div>
               <div class="length">00:00</div>
             </div>
-            <div class="song-name">
-              <p class="song-name__title"></p>
-            </div>
+            <div class="player-controls">
+              <button class="play-prev player-icon"></button>
+              <button class="play player-icon"></button>
+              <button class="play-next player-icon"></button>
+          </div>
             <div class="volume">
               <div class="volume-button">
                 <div class="volume-ico fa-solid fa-volume-high"></div>
@@ -37,30 +37,30 @@
               </div>
             </div>
           </div>
+          <ul class="play-list">
+            <div class="song">
+              <i class="fa-solid fa-play"></i>
+              <li class="play-item">Imminence</li>
+            </div>
+            <div class="song">
+              <i class="fa-solid fa-play"></i>
+              <li class="play-item">A Storm Was Gathering</li>
+            </div>
+            <div class="song">
+              <i class="fa-solid fa-play"></i>
+              <li class="play-item">Last Mile</li>
+            </div>
+            <div class="song">
+              <i class="fa-solid fa-play"></i>
+              <li class="play-item">Away</li>
+            </div>
+            <div class="song">
+              <i class="fa-solid fa-play"></i>
+              <li class="play-item">Shadows of the Past</li>
+            </div>
+          </ul>
         </div>
       </div>
-      <ul class="play-list">
-        <div class="song">
-          <i class="fa-solid fa-play"></i>
-          <li class="play-item">Imminence</li>
-        </div>
-        <div class="song">
-          <i class="fa-solid fa-play"></i>
-          <li class="play-item">A Storm Was Gathering</li>
-        </div>
-        <div class="song">
-          <i class="fa-solid fa-play"></i>
-          <li class="play-item">Last Mile</li>
-        </div>
-        <div class="song">
-          <i class="fa-solid fa-play"></i>
-          <li class="play-item">Away</li>
-        </div>
-        <div class="song">
-          <i class="fa-solid fa-play"></i>
-          <li class="play-item">Shadows of the Past</li>
-        </div>
-      </ul>
     </div>
     <div class="weather">
       <input type="text" class="city" />

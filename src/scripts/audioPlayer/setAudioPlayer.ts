@@ -23,7 +23,7 @@ const playAudio = (): void => {
   audio.src = songs[songNum].src;
   audio.currentTime = audioCurrentTime;
   songLength.textContent = songs[songNum].duration;
-  songName.textContent = songs[songNum].title;
+  songName.textContent = `${songs[songNum].title} — Sleep Dealer`;
   for (let i = 0; i < songsList.length; i += 1) {
     if (songsList[i].textContent === songs[songNum].title) {
       songsList[i].style.opacity = '2';
