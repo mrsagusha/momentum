@@ -390,6 +390,8 @@ body {
 
 .fa-clipboard-list:hover {
   cursor: pointer;
+  transition: 1s;
+  transform: rotate(360deg);
 }
 
 .todo-tabs {
@@ -535,7 +537,20 @@ body {
 }
 
 .fa-arrow-up:active {
-  bottom: 15px
+  color: #e97950;
+}
+
+.settings {
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+  font-size: 25px;
+}
+
+.settings:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 .change-quote {

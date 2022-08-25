@@ -1,0 +1,9 @@
+[
+    {
+        "weather": "[Enter your city]",
+        "greeting": "[Enter your name]",
+        "timeOfTheDay": ["morning", "afternoon", "evening", "night"],
+        "toDoTabs": ["My tasks", "Done"],
+        "toDoInput": "Enter new task..."
+    }
+]
