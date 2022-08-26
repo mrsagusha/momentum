@@ -8,6 +8,8 @@ import showTodo from './scripts/toDo/showTodo';
 import { addTask } from './scripts/toDo/addTask';
 import { switchTab } from './scripts/toDo/switchTab';
 import changeLanguage from './scripts/changeLanguage';
+import rus from './data/rus.json';
+import en from './data/en.json';
 import './css/owfont-regular.css';
 import './css/style.css';
 
@@ -33,6 +35,16 @@ window.addEventListener('load', (): void => {
 });
 
 changeQuote();
+
+if (localStorage.getItem('language') === 'en') {
+  document.querySelector('.city')?.setAttribute('placeholder', `${en[0].weather}`);
+  document.querySelector('.name')?.setAttribute('placeholder', `${en[0].greeting}`);
+  document.querySelector('.todo-input')?.setAttribute('placeholder', `${en[0].toDoInput}`);
+} else {
+  document.querySelector('.city')?.setAttribute('placeholder', `${rus[0].weather}`);
+  document.querySelector('.name')?.setAttribute('placeholder', `${rus[0].greeting}`);
+  document.querySelector('.todo-input')?.setAttribute('placeholder', `${rus[0].toDoInput}`);
+}
 
 document.querySelector('.slide-next').addEventListener('click', (): void => {
   if (numberOfImage === '20') {

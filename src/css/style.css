@@ -547,7 +547,7 @@ body {
   font-size: 25px;
 }
 
-.settings:hover {
+.fa-language:hover {
   cursor: pointer;
   transform: rotate(360deg);
   transition: 1s;

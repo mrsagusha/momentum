@@ -7,7 +7,7 @@ import getWeather from '../scripts/getWeather';
 import showTime from '../scripts/timeAndDate/showTime';
 
 const cityInput: HTMLInputElement | null = document.querySelector('.city');
-const btn: HTMLElement | null = document.querySelector('.fa-gear');
+const btn: HTMLElement | null = document.querySelector('.fa-language');
 const toDoTasksTitle: HTMLElement | null = document.querySelector('.tasks-tab__text');
 const toDoDoneTasksTitle: HTMLElement | null = document.querySelector('.done-tab__text');
 

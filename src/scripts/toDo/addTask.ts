@@ -55,7 +55,7 @@ function createTask() {
         taskDone.append(taskTextDone);
         tasksDone.prepend(taskDone);
         taskTextDone.textContent = taskText.textContent;
-        taskDateText.textContent = `${(currentDate.getDay()).toString().padStart(2, '0')}.${(currentDate.getMonth()).toString().padStart(2, '0')}.${currentDate.getFullYear()}`;
+        taskDateText.textContent = `${(currentDate.getDate()).toString().padStart(2, '0')}.${(currentDate.getMonth() + 1).toString().padStart(2, '0')}.${currentDate.getFullYear()}`;
       }, 300);
     }
   });
