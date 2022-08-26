@@ -16,6 +16,8 @@ import './css/style.css';
 const nameField: HTMLInputElement = document.querySelector('.name');
 let numberOfImage: string = (Math.round(Math.random() * 20)).toString().padStart(2, '0');
 const cityInput: HTMLInputElement = document.querySelector('.city');
+const toDoTasksTitle: HTMLElement | null = document.querySelector('.tasks-tab__text');
+const toDoDoneTasksTitle: HTMLElement | null = document.querySelector('.done-tab__text');
 
 window.addEventListener('beforeunload', (): void => {
   window.localStorage.setItem('name', nameField.value);
@@ -44,6 +46,8 @@ if (localStorage.getItem('language') === 'en') {
   document.querySelector('.city')?.setAttribute('placeholder', `${rus[0].weather}`);
   document.querySelector('.name')?.setAttribute('placeholder', `${rus[0].greeting}`);
   document.querySelector('.todo-input')?.setAttribute('placeholder', `${rus[0].toDoInput}`);
+  toDoTasksTitle.textContent = rus[0].toDoTabs[0];
+  toDoDoneTasksTitle.textContent = rus[0].toDoTabs[1];
 }
 
 document.querySelector('.slide-next').addEventListener('click', (): void => {
