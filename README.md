@@ -9,3 +9,5 @@ The following functionality is implemented here:
 6. Quotes widget;
 7. Translation by button;
 There are some bugs (changing background when russian language is selected, size of todo list when added a lot of things)
+
+deploy v: https://mrsagusha.github.io/momentum/dist/
